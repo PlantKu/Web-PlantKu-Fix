@@ -1,0 +1,300 @@
+/*-------------------- Global Styles ----------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/*----------------------- Header Styles ----------------------- */
+header {
+    background-color: #aced9a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    color: #28963d;
+    margin: 0;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #80cc29;
+    border-radius: 15px;
+}
+
+/* ---------------------- WhatsApp Button Styles -------------------- */
+.whatsapp-button {
+    position: fixed;
+    right: 2px;
+    top: 80%; /* Center vertically */
+    transform: translateY(-50%);
+    background-color: #25D366;
+    border-radius: 15px; 
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure button is above other content */
+}
+
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebf53;
+}
+
+/*-------------------- Main Content Styles ----------------------- */
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+    background-color: #f5f5f5;
+    margin-top: 80px; /* Offset for sticky header */
+}
+
+.main-content .text {
+    max-width: 50%;
+}
+
+.main-content h1 {
+    color: #28963d;
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.main-content p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-content .button-container {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28963d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.main-content .button-container:hover {
+    background-color: #1e7a2c;
+}
+
+.main-content .image-container {
+    width: 40%;
+    text-align: right;
+}
+
+.main-content .image-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*----------------- Features Container Styles ----------------------- */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #666;
+}
+
+/*-------------------- Blog Page Styles ---------------------------- */
+.blog-content {
+    margin-top: 80px; /* Adjust for sticky header */
+    padding: 20px;
+}
+
+.blog-content h1 {
+    color: #28963d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Smaller article boxes for blog page */
+.blog-content .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.blog-content .feature {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 300px; /* Same width as homepage */
+    text-align: center;
+    margin: 20px 10px; /* Adjusted margin for more spacing between boxes */
+    cursor: pointer;
+    transition: transform 0.2s;
+    height: 350px; /* Adjusted height for blog page */
+}
+
+.blog-content .feature:hover {
+    transform: scale(1.05);
+}
+
+.blog-content .feature img {
+    width: 100%;
+    height: 120px; /* Adjusted height for images */
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.blog-content .feature h2 {
+    font-size: 1.2em; /* Smaller font size for blog page */
+    margin: 10px 0;
+}
+
+.blog-content .feature p {
+    font-size: 0.9em; /* Smaller font size for blog page */
+    color: #666;
+    overflow: hidden; /* Ensure text doesn't overflow */
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+/*-------------------- Footer Styles ---------------------------- */
+footer {
+    background-color: #aced9a;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media a,
+.app-download a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media img,
+.app-download img {
+    width: 30px;
+    height: 30px;
+}
+/* Additional CSS for spacing */
+.blog-content .feature {
+    margin: 20px 10px; /* Adjust the values as needed */
+}

@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 85px;
+}
+
+.features-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.features-banner img {
+    width: 75%; /* Mengurangi ukuran gambar */
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.feature-banner{
+    flex: 1;
+    padding: 20px;
+}
+
+
+.features-banner h1 {
+    font-size: 46px;
+    color: #28963d;
+    margin-bottom: 10px;
+    margin-top: -80px;
+}
+
+.features-banner p {
+    font-size: 18px;
+    color: #555;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.02);
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-image img {
+    width: 50%; /* Mengurangi ukuran gambar */
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.feature-image.banner img {
+    border-radius: 0; /* Bingkai kotak biasa untuk banner */
+}
+
+.feature-image.feature1 img {
+    border-radius: 0 0 50% 0; /* Bingkai kotak dengan sudut bawah kanan melingkar */
+}
+
+.feature-image.feature2 img {
+    border-radius: 50%; /* Bingkai lingkaran */
+}
+
+.feature-image.feature3 img {
+    border-radius: 0 50% 50% 0; /* Bingkai kotak dengan sudut kanan bawah dan kanan atas melingkar */
+}
+
+.feature-image.feature4 img {
+    border-radius: 10px; /* Bingkai kotak */
+}
+
+.feature-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.feature-content h2 {
+    font-size: 40px;
+    color: #28963d;
+    margin-bottom: 10px;
+    margin-top: -40px;
+}
+
+.feature-content p {
+    font-size: 20px;
+    color: #555;
+}
+
+.try-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #228B22; /* Warna hijau */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.try-now-button:hover {
+    background-color: #196619; /* Warna hijau lebih gelap */
+}

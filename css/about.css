@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    height: 300px;
+    margin-top: 75px; /* Margin top agar tidak ketutupan header */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('../img/about.png') no-repeat center right;
+    background-size: cover;
+}
+
+.section {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.vision, .mission {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.vision img {
+    width: 30%;
+    margin-left: 20px; /* Margin left agar jarak dengan teks lebih teratur */
+    order: 2; /* Menempatkan gambar di sebelah kanan */
+}
+
+.vision .content {
+    width: 70%;
+    order: 1; /* Menempatkan teks di sebelah kiri */
+}
+
+.mission img {
+    width: 30%;
+    margin-right: 20px; /* Margin right agar jarak dengan teks lebih teratur */
+}
+
+.mission .content {
+    width: 70%;
+}
+
+.vision .content h2, .mission .content h2 {
+    font-size: 44px; /* Ukuran font judul */
+    color: #333; /* Warna teks judul */
+}
+
+.vision .content p, .mission .content ul {
+    font-size: 26px; /* Ukuran font teks */
+    color: #555; /* Warna teks */
+}
+
+.founder h2, .founder p {
+    text-align: left; /* Rata kanan untuk judul dan teks */
+    
+}
+
+.founder h2{
+    font-size: 46px;
+    color: #333; /* Warna teks judul */
+}
+
+.founder p{
+    font-size: 26px;
+    color: #555; /* Warna teks */
+}
+
+.founder span {
+    font-size: 26px;
+}
+
+.founder {
+    padding-left: 300px; /* Padding tambahan untuk founder */
+    padding-right: 300px; /* Padding tambahan untuk founder */
+    margin-bottom: 30px;
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center; /* Text center in modal */
+}
+
+.modal-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.founder-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.founder-images img {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+/* Specific layout for 2 images on top and 3 images below */
+.founder-images img:nth-child(1),
+.founder-images img:nth-child(2) {
+    width: 48%;
+}
+
+.founder-images img:nth-child(3),
+.founder-images img:nth-child(4),
+.founder-images img:nth-child(5) {
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .vision, .mission {
+        flex-direction: column;
+    }
+    .vision img, .mission img {
+        width: 100%;
+        margin: 0 0 20px 0; /* Margin diatur agar jarak dengan teks lebih baik */
+    }
+    .vision .content, .mission .content {
+        width: 100%;
+    }
+    .founder-images img {
+        width: 90%;
+    }
+}
